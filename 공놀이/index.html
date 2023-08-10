@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scripts.js">
+</head>
+<body>
+    <svg class="인체" id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 484.62">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #fff;
+            }
+      
+            .cls-2 {
+              fill: red;
+            }
+
+          </style>
+        </defs>
+        <circle cx="158" cy="40" r="40"/>
+        <ellipse cx="158.5" cy="188" rx="50.5" ry="89"/>
+        <ellipse cx="69.5" cy="160.5" rx="78.5" ry="19.5" transform="translate(-104.46 178.65) rotate(-72.54)"/>
+        <ellipse cx="225.53" cy="122.26" rx="16.09" ry="39.44" transform="translate(-26.29 73.29) rotate(-17.46)"/>
+        <ellipse cx="109.97" cy="319.31" rx="56.68" ry="23.79" transform="translate(-210.37 426.28) rotate(-89.46)"/>
+        <ellipse cx="208.97" cy="319.31" rx="56.68" ry="23.79" transform="translate(-112.29 525.28) rotate(-89.46)"/>
+        <ellipse cx="55" cy="394" rx="55" ry="17"/>
+        <ellipse cx="194" cy="434" rx="55" ry="17" transform="translate(-281.38 432.21) rotate(-65.7)"/>
+        <circle class="ball cls-2" cx="317.5" cy="253.5" r="42.5"/>
+        <circle class="cls-1" cx="236.5" cy="176.5" r=".5"/>
+        <ellipse class="right-arm" cx="280.15" cy="178.37" rx="14.39" ry="43.83" transform="translate(88.29 449.46) rotate(-87.2)"/>
+
+        <script>
+            const Ball = document.querySelector('.ball');
+            Ball.addEventListener('click', () => {
+              Ball.classList.toggle('Bounce-Ball');
+            });
+          </script>
+      </svg>
+      
+    <button class="one">공</button>
+    <script>
+        const ONE = document.querySelector('.one');
+        const TWO = document.querySelector('.ball');
+        const THREE = document.querySelector('.right-arm')
+        ONE.addEventListener('click', () => {
+            TWO.classList.toggle('Bounce-Ball');
+            THREE.classList.toggle('Bounce-Arm');
+        });
+
+    </script>
+</body>
+
+</html>
