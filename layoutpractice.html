@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{border: 1px solid red;display: flex;flex-wrap: wrap;}
+        .header{width: 100vw;height: 10vh;background-color: red;display: flex;justify-content: center;align-items: center;}
+        .contents{width: 100vw;height: 50vh;background-color: rgb(255, 197, 197);display: flex;justify-content:space-around;align-items: center;
+        }
+        .ball{width: 100px;height: 100px;background-color: aquamarine;border: 2px solid #000;display: flex;align-items: center;justify-content: center;
+        /*transition: 1s;*/
+        }
+        .ball:hover{
+            animation: ball-ani 1s alternate infinite;
+        }
+        /* .ball:hover{transform: scale(1.5) rotate(45deg); background-color: rgb(152, 152, 255);} */
+
+        @keyframes ball-ani {
+            0%{
+            }
+            100%{
+                transform: scale(2);
+                background-color: blanchedalmond;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="contents">
+            <div class="ball">a</div>
+            <div class="ball">b</div>
+            <div class="ball">c</div>
+            <div class="ball">d</div>
+        </div>
+    </div>
+</body>
+</html>
